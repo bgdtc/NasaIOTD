@@ -1,5 +1,5 @@
 //déclaration de constantes 1-API 2-VIDEO_DU_JOUR 3-IMAGE_DU_JOUR 4-INPUT_DATE 5-IMAGE_DATE 6-VIDEO_DATE
-const urlApi = 'https://api.nasa.gov/planetary/apod?api_key=gLe8JlDuBckdftGTVhcxauh64pUeB8xnRV91wcJr';
+const urlApi = `https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}`;
 const video = document.getElementById('videoToday');
 const image = document.getElementById('imageToday');
 const date = document.getElementById('apod');
